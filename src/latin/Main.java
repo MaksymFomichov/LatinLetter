@@ -28,7 +28,6 @@ public class Main {
     // переставляем символы
     private static String sortArray(String text) {
         char[] charArray = text.toCharArray();
-        //System.out.println("charArray " + charArray.length + " " + Arrays.toString(charArray));
         ArrayList<Character> tempCharArray = new ArrayList<>();
         // меняем местами все латинские символы
         for (int i = 0; i < charArray.length; i++) {
