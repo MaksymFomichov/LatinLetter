@@ -12,10 +12,10 @@ public class ReverseLatin {
     public String getReverseText() {
         String resultText = "";
         for (String temp : enterText.split(" ")) {
-            resultText += sortArray(temp.trim());
+            resultText += sortArray(temp);
             resultText += " ";
         }
-        return resultText;
+        return resultText.trim();
     }
 
     // переставляем символы
@@ -36,9 +36,13 @@ public class ReverseLatin {
                 tempCharArray.add(i, temp);
             }
         }
-        // конвертируем аррейлист чаров в стринг
-        StringBuilder builder = new StringBuilder(tempCharArray.size());
-        for (Character ch : tempCharArray) {
+        return convertCharacter(tempCharArray);
+    }
+
+    // конвертируем аррейлист чаров в стринг
+    private String convertCharacter(ArrayList<Character> character){
+        StringBuilder builder = new StringBuilder(character.size());
+        for (Character ch : character) {
             builder.append(ch);
         }
         return builder.toString();
