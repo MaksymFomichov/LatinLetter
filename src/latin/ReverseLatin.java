@@ -9,7 +9,7 @@ public class ReverseLatin {
         this.enterText = text;
     }
 
-    public String getText() {
+    public String getReverseText() {
         String resultText = "";
         for (String temp : enterText.split(" ")) {
             resultText += sortArray(temp.trim());

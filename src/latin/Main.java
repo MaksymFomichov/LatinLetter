@@ -16,6 +16,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите строку в латинской расскладке:");
         String stringLatin = scanner.nextLine();
-        System.out.println(new ReverseLatin(stringLatin).getText());
+        System.out.println(new ReverseLatin(stringLatin).getReverseText());
     }
 }
