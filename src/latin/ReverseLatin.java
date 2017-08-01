@@ -10,12 +10,12 @@ public class ReverseLatin {
     }
 
     public String getText() {
-        String temp = "";
-        for (String text1 : enterText.split(" ")) {
-            temp += sortArray(text1.trim());
-            temp += " ";
+        String resultText = "";
+        for (String temp : enterText.split(" ")) {
+            resultText += sortArray(temp.trim());
+            resultText += " ";
         }
-        return temp;
+        return resultText;
     }
 
     // переставляем символы
